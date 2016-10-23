@@ -6,10 +6,12 @@
 #define TMP_SELECTOR_H
 
 
+#include "Setup.h"
+
 class Selector {
 public:
     void print();
-    int mainLoop();
+    int mainLoop(Setup);
 };
 
 

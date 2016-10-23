@@ -2,8 +2,8 @@
 // Created by Pavi on 2016-10-22.
 //
 #include <stdlib.h>
+#include <iostream>
 #include "Setup.h"
-#include "Broadcaster.h"
 #include "TestBand.h"
 
 int Setup::setUp() {
@@ -24,7 +24,11 @@ int Setup::setUp() {
         testAm.freq(fmGen);
     }while(!testFm.test());
 
-    Broadcaster broadcaster;
+    //setup broadcaster
     broadcaster.setFreqAm(amGen);
     broadcaster.setFreqFm(fmGen);
+}
+
+void Setup::testHardware() {
+    std::cout << "hardware Tested";
 }

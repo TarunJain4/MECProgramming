@@ -8,7 +8,7 @@
 
 class TestBand {
 public:
-    int freq(int);
+    void freq(int);
     bool test();
 };
 

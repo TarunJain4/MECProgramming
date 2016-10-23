@@ -6,13 +6,14 @@
 #include "Broadcaster.h"
 
 void  Broadcaster::setFreqAm(int freq) {
-    std::cout << freq;
+    std::cout << "AM Frequency set: " << freq << std::endl;
 }
 
 void  Broadcaster::setFreqFm(int freq) {
-    std::cout << freq;
+    std::cout << "FM Frequency set: " << freq << std::endl;
 }
 
-void  Broadcaster::broadCast(char * message) {
-    std::cout << message;
+int  Broadcaster::broadCast(char * message) {
+    std::cout << "Broadcasting Message: " << message <<std::endl;
+    return 1;
 }

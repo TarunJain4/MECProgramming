@@ -6,9 +6,13 @@
 #define TMP_SETUP_H
 
 
+#include "Broadcaster.h"
+
 class Setup {
 public:
     int setUp();
+    void testHardware();
+    Broadcaster broadcaster;
 };
 
 
